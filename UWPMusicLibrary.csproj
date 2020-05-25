@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{75E0ABC5-7B74-430C-BF3C-4698602BAF74}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UWPMusicLibrary</RootNamespace>
+    <AssemblyName>UWPMusicLibrary</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AudioBooks.xaml.cs">
+      <DependentUpon>AudioBooks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePlayList.xaml.cs">
+      <DependentUpon>CreatePlayList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePlayList.xaml.cs">
+      <DependentUpon>DeletePlayList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Audio.cs" />
+    <Compile Include="Model\AudioManager.cs" />
+    <Compile Include="Model\MainMenuItem.cs" />
+    <Compile Include="Model\Album.cs" />
+    <Compile Include="Model\AlbumManager.cs" />
+    <Compile Include="Model\PlaylistFiles.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Audio\AudioBooks\KidsandTeens\AesopsFables\Androcles_and_the_Lion.mp3" />
+    <Content Include="Assets\Audio\AudioBooks\KidsandTeens\AesopsFables\How_Peace_and_Love_came_to_the_Woods.mp3" />
+    <Content Include="Assets\Audio\AudioBooks\KidsandTeens\AesopsFables\The_Boy_who_cried_Wolf.mp3" />
+    <Content Include="Assets\Audio\AudioBooks\KidsandTeens\AesopsFables\The_Grasshopper_and_the_Ants.mp3" />
+    <Content Include="Assets\Audio\AudioBooks\KidsandTeens\AesopsFables\The_Hare_and_the_Tortoise.mp3" />
+    <Content Include="Assets\Audio\AudioBooks\KidsandTeens\AesopsFables\The_Oak_and_the_Reed.mp3" />
+    <Content Include="Assets\Audio\AudioBooks\KidsandTeens\AesopsFables\The_Rat_and_the_Elephant.mp3" />
+    <Content Include="Assets\Audio\AudioBooks\KidsandTeens\AesopsFables\The_Town_Mouse_and_the_Country_Mouse.mp3" />
+    <Content Include="Assets\Audio\AudioBooks\KidsandTeens\AesopsFables\The_Two_Frogs_and_the_Well.mp3" />
+    <Content Include="Assets\Audio\Instrumental\Guitar.mp3" />
+    <Content Include="Assets\Audio\Instrumental\Harp.mp3" />
+    <Content Include="Assets\Audio\Instrumental\Piano.mp3" />
+    <Content Include="Assets\Audio\SleepMusic\lullabygoodnight.mp3" />
+    <Content Include="Assets\Audio\SleepMusic\rockabyebaby.mp3" />
+    <Content Include="Assets\Audio\SleepMusic\twinkle.mp3" />
+    <Content Include="Assets\Icons\Adults.jpeg" />
+    <Content Include="Assets\Icons\AesopsFables.jpg" />
+    <Content Include="Assets\Icons\clear.png" />
+    <Content Include="Assets\Icons\create.png" />
+    <Content Include="Assets\Icons\delete.png" />
+    <Content Include="Assets\Icons\home.png" />
+    <Content Include="Assets\Icons\Kids.jpeg" />
+    <Content Include="Assets\Icons\KidsAndTeens.jpg" />
+    <Content Include="Assets\Icons\mylibrary.png" />
+    <Content Include="Assets\Icons\search.png" />
+    <Content Include="Assets\Icons\Spirituality.jpeg" />
+    <Content Include="Assets\Images\AudioBooks\Adults\Spirituality\Die_to_Live.jpg" />
+    <Content Include="Assets\Images\AudioBooks\Adults\Spirituality\Science_of_The_Soul.jpg" />
+    <Content Include="Assets\Images\AudioBooks\KidsandTeens\AesopsFables\Androcles_and_the_Lion.jpg" />
+    <Content Include="Assets\Images\AudioBooks\KidsandTeens\AesopsFables\How_Peace_and_Love_came_to_the_Woods.jpg" />
+    <Content Include="Assets\Images\AudioBooks\KidsandTeens\AesopsFables\The_Boy_who_cried_Wolf.jpg" />
+    <Content Include="Assets\Images\AudioBooks\KidsandTeens\AesopsFables\The_Grasshopper_and_the_Ants.jpg" />
+    <Content Include="Assets\Images\AudioBooks\KidsandTeens\AesopsFables\The_Hare_and_the_Tortoise.jpg" />
+    <Content Include="Assets\Images\AudioBooks\KidsandTeens\AesopsFables\The_Oak_and_the_Reed.jpg" />
+    <Content Include="Assets\Images\AudioBooks\KidsandTeens\AesopsFables\The_Rat_and_the_Elephant.jpg" />
+    <Content Include="Assets\Images\AudioBooks\KidsandTeens\AesopsFables\The_Town_Mouse_and_the_Country_Mouse.jpg" />
+    <Content Include="Assets\Images\AudioBooks\KidsandTeens\AesopsFables\The_Two_Frogs_and_the_Well.jpg" />
+    <Content Include="Assets\Images\Background.jpg" />
+    <Content Include="Assets\Images\Background1.jpg" />
+    <Content Include="Assets\Images\Background2.jpg" />
+    <Content Include="Assets\Images\Background3.jpg" />
+    <Content Include="Assets\Images\Instrumental.png" />
+    <Content Include="Assets\Images\Lullabies.png" />
+    <Content Include="Assets\Images\Movies.png" />
+    <Content Include="Assets\Images\songLogo.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AudioBooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreatePlayList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeletePlayList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.9</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsDesktop, Version=10.0.18362.0">
+      <Name>Windows Desktop Extensions for the UWP</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Audio\AudioBooks\Adults\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

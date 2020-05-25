@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="UWPMusicLibrary.CreatePlayList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPMusicLibrary"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:model="using:UWPMusicLibrary.Model"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid> 
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/Background2.jpg"/>
+        </Grid.Background> 
+            
+        <StackPanel Orientation="Vertical">
+            <RelativePanel>
+                <AppBarButton Icon="Back" Click="AppBarButton_Click" RelativePanel.AlignLeftWithPanel="True"/>
+                <TextBlock Text="Create Playlist" Height="100" FontSize="36" TextAlignment="Center" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+            </RelativePanel>
+            <RelativePanel HorizontalAlignment="Center">
+                <TextBlock x:Name="LabelPlaylistName" Text="Playlist Name" TextWrapping="Wrap" Width="200"
+                        Margin="0,40,0,0" TextAlignment="Center" VerticalAlignment="Center" FontSize="25" />
+                <TextBox x:Name="PlaylistName" Width="250" PlaceholderText="Enter a playlist name" Margin="0,40,0,0"
+                        RelativePanel.RightOf="LabelPlaylistName"/>
+                <TextBlock x:Name="LabelPlaylistSongs" Margin="0,100,0,0" Text="Select Tracks" TextWrapping="Wrap" Width="200"
+                        TextAlignment="Center" VerticalAlignment="Center" FontSize="25" />
+                <Button Name="BrowseMusicLibrary" Margin="10,100,0,0" Content="Browse" FontSize="20" Click="BrowseMusicLibrary_Click" 
+                        Height="40" Width="150" RelativePanel.RightOf="LabelPlaylistSongs"/>
+                <Button Name="ButtonSavePlayList" Content="Save" FontSize="20" Click="ButtonSavePlayList_Click" 
+                        Height="40" Width="150" Margin="10,100,0,0" RelativePanel.RightOf="BrowseMusicLibrary"/>
+                
+            </RelativePanel>
+ 
+            <ListView Margin="0,30,0,0" FontSize="20" FontStyle="Italic" HorizontalAlignment="Center" Name="PlayListView" ItemsSource="{x:Bind PlaylistFilesList}">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="model:PlaylistFiles">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{x:Bind FileName}" FontSize="18" Margin="10,0,0,0"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Page>
