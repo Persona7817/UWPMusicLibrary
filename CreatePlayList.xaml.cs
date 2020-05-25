@@ -70,7 +70,7 @@ namespace UWPMusicLibrary
             IReadOnlyList<StorageFile> files = await picker.PickMultipleFilesAsync();
             PlaylistFilesList.Clear();
             var fileList = new List<PlaylistFiles>();
-            Playlist playlist = new Playlist();
+            //Playlist playlist = new Playlist();
 
             if (files.Count > 0)
             {
